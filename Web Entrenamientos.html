@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Entrenamiento</title>
+    <style>
+        /* --- Estilos Generales --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- Títulos y Cabecera --- */
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+        h2 {
+            font-size: 1.5em;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        /* --- Estructura de Acordeón --- */
+        .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .accordion-header {
+            background-color: #ffffff;
+            color: #2c3e50;
+            padding: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-header::after {
+            content: '▼'; /* Flecha hacia abajo */
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        .accordion-item.active .accordion-header::after {
+            transform: rotate(180deg); /* Flecha hacia arriba */
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            padding: 0 20px;
+        }
+
+        /* --- Tabla de Ejercicios --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #eaf2f8;
+            font-weight: bold;
+            color: #34495e;
+        }
+        td:first-child {
+            font-weight: 500;
+        }
+        .notes {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            display: block;
+            margin-top: 4px;
+        }
+        .fase {
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            color: #e67e22;
+            margin-bottom: 20px;
+        }
+        
+        /* --- Nota sobre el Ciclo Menstrual --- */
+        .menstrual-note {
+            background-color: #fdf2e9;
+            border-left: 5px solid #e67e22;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .menstrual-note h3 {
+            margin-top: 0;
+            color: #d35400;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Plan de Entrenamiento Mensual</h1>
+        <p style="text-align: center;">Haz clic en cada día para desplegar los ejercicios.</p>
+
+        <!-- SEMANAS 1 & 2 -->
+        <h2>Semanas 1 y 2: Acondicionamiento</h2>
+        <p class="fase">Objetivo: Crear bases sólidas y aprender la técnica.</p>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 1: Empuje y Pierna</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Ejercicio</th><th>Series x Reps</th></tr>
+                    <tr><td>Calentamiento</td><td>5-10 min bici/elíptica + movilidad</td></tr>
+                    <tr><td>Sentadilla (barra/multipower)</td><td>3 x 10-12 <span class="notes">Foco en técnica y profundidad.</span></td></tr>
+                    <tr><td>Press de Banca (barra/manc.)</td><td>3 x 10-12 <span class="notes">Control en la bajada.</span></td></tr>
+                    <tr><td>Zancadas con mancuernas</td><td>3 x 10 por pierna <span class="notes">Mejora la estabilidad.</span></td></tr>
+                    <tr><td>Press Militar con mancuernas</td><td>3 x 10-12 <span class="notes">Fortalece los hombros para remates.</span></td></tr>
+                    <tr><td>Press Pallof (rotaciones)</td><td>3 x 12 por lado <span class="notes">Clave para la potencia en pádel.</span></td></tr>
+                    <tr><td>Enfriamiento y Estiramientos</td><td>5-10 min</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 2: Tracción y Core</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Ejercicio</th><th>Series x Reps</th></tr>
+                    <tr><td>Calentamiento</td><td>5-10 min bici/elíptica + movilidad</td></tr>
+                    <tr><td>Peso Muerto Rumano</td><td>3 x 10-12 <span class="notes">Fortalece isquios y glúteos.</span></td></tr>
+                    <tr><td>Remo con Barra o en Máquina</td><td>3 x 10-12 <span class="notes">Para una espalda fuerte.</span></td></tr>
+                    <tr><td>Jalón al Pecho (polea alta)</td><td>3 x 10-12 <span class="notes">Trabaja espalda alta y bíceps.</span></td></tr>
+                    <tr><td>Plancha Isométrica</td><td>3 x 30-45 seg <span class="notes">Fortalece todo el core.</span></td></tr>
+                    <tr><td>Elevaciones Laterales (manc.)</td><td>3 x 12-15 <span class="notes">Para la salud del hombro.</span></td></tr>
+                    <tr><td>Enfriamiento y Estiramientos</td><td>5-10 min</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 3: Circuito Full Body</div>
+            <div class="accordion-content">
+                <p><strong>Realizar 3 rondas del circuito, descansando 1 min entre rondas.</strong></p>
+                <table>
+                    <tr><th>Ejercicio</th><th>Repeticiones</th></tr>
+                    <tr><td>Box Jumps (Saltos al cajón)</td><td>8 reps <span class="notes">Potencia de piernas.</span></td></tr>
+                    <tr><td>Lanzamiento Balón Medicinal</td><td>10 por lado <span class="notes">Potencia rotacional del core.</span></td></tr>
+                    <tr><td>Flexiones de Brazos</td><td>Al fallo <span class="notes">Puedes apoyar rodillas si es necesario.</span></td></tr>
+                    <tr><td>Swing con Kettlebell</td><td>15 reps <span class="notes">Potencia de cadera.</span></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- SEMANAS 3 & 4 -->
+        <h2>Semanas 3 y 4: Intensificación</h2>
+        <p class="fase">Objetivo: Aumentar la fuerza y la potencia (más peso, menos reps).</p>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 1: Fuerza Máxima</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Ejercicio</th><th>Series x Reps</th></tr>
+                    <tr><td>Calentamiento</td><td>10-15 min + activación con bandas</td></tr>
+                    <tr><td>Sentadilla con Barra</td><td>4 x 6-8 <span class="notes">Aumentar la carga.</span></td></tr>
+                    <tr><td>Press de Banca con Barra</td><td>4 x 6-8 <span class="notes">Movimiento controlado y potente.</span></td></tr>
+                    <tr><td>Peso Muerto / Hip Thrust</td><td>4 x 6-8 <span class="notes">Potencia para la cadena posterior.</span></td></tr>
+                    <tr><td>Dominadas (o Jalón al Pecho)</td><td>4 x 6-8 <span class="notes">Fuerza de tracción vertical.</span></td></tr>
+                    <tr><td>Press Pallof</td><td>3 x 8-10 por lado <span class="notes">Con mayor resistencia.</span></td></tr>
+                    <tr><td>Enfriamiento y Estiramientos</td><td>5 min</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 2: Potencia y Resistencia</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Ejercicio</th><th>Series x Reps</th></tr>
+                    <tr><td>Calentamiento</td><td>10 min de movilidad y activación</td></tr>
+                    <tr><td>Zancadas con Salto</td><td>3 x 8 por pierna <span class="notes">Ejercicio pliométrico explosivo.</span></td></tr>
+                    <tr><td>Press de Hombros de pie</td><td>3 x 8-10 <span class="notes">Requiere estabilización del core.</span></td></tr>
+                    <tr><td>Remo al Mentón</td><td>3 x 10-12 <span class="notes">Fortalece hombros y trapecios.</span></td></tr>
+                    <tr><td>Plancha con Rotación</td><td>3 x 10 por lado <span class="notes">Mejora el control rotacional.</span></td></tr>
+                    <tr><td>Superserie: Bíceps y Tríceps</td><td>3 x 10-12 <span class="notes">Trabajo específico de brazos.</span></td></tr>
+                    <tr><td>Cardio HIIT (opcional)</td><td>15 min (30s sprint / 30s descanso)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">Día 3: Agilidad y Prevención</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Ejercicio</th><th>Series x Reps/Tiempo</th></tr>
+                    <tr><td>Calentamiento</td><td>10 min + escalera de agilidad (si hay)</td></tr>
+                    <tr><td>Desplazamientos Laterales (banda)</td><td>3 x 15 por lado <span class="notes">Fortalece abductores para la defensa.</span></td></tr>
+                    <tr><td>Rotación Cubana (gomas/manc.)</td><td>3 x 15 <span class="notes">Salud del manguito rotador.</span></td></tr>
+                    <tr><td>Sentadilla Isométrica en Pared</td><td>3 x 45-60 seg <span class="notes">Posición de espera en pádel.</span></td></tr>
+                    <tr><td>Plancha Lateral</td><td>3 x 30-45 seg por lado <span class="notes">Fortalece los oblicuos.</span></td></tr>
+                    <tr><td>Estiramientos Muñeca/Antebrazo</td><td>2 x 30 seg <span class="notes">Prevención de codo de tenista.</span></td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- NOTA CICLO MENSTRUAL -->
+        <div class="menstrual-note">
+            <h3>🚺 Recordatorio Ciclo Menstrual</h3>
+            <p><strong>Fase Folicular (Más energía):</strong> Momento ideal para las semanas de Intensificación (3 y 4) o para buscar pesos más altos.</p>
+            <p><strong>Fase Lútea (Menos energía):</strong> Adaptar bajando la intensidad. Se puede repetir una semana de Acondicionamiento o enfocarse en movilidad.</p>
+            <p><strong>Menstruación:</strong> Escuchar al cuerpo. Priorizar el bienestar: entrenar suave, caminar o estirar.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // --- Lógica del Acordeón ---
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            const content = item.querySelector('.accordion-content');
+
+            header.addEventListener('click', () => {
+                // Cerrar otros items abiertos
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.accordion-content').style.maxHeight = '0';
+                        otherItem.querySelector('.accordion-content').style.padding = '0 20px';
+                    }
+                });
+
+                // Abrir/cerrar el item actual
+                item.classList.toggle('active');
+                if (item.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.style.padding = '1px 20px 20px 20px';
+                } else {
+                    content.style.maxHeight = '0';
+                    content.style.padding = '0 20px';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
